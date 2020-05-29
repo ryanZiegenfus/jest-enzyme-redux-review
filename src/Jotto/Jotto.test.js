@@ -1,11 +1,8 @@
 import React from 'react';
-import Enzyme, { shallow } from 'enzyme';
-import EnzymeAdapter from 'enzyme-adapter-react-16';
+import { shallow } from 'enzyme';
 
 import { findByTestAttr } from '../test/testUtils'
 import Jotto from './Jotto';
-
-Enzyme.configure({adapter: new EnzymeAdapter()});
 
 const setup = (props={}, state=null) => {
     const wrapper = shallow(<Jotto {...props}/>)
