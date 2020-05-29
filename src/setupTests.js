@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom/extend-expect';
-import Enzyme, { shallow } from 'enzyme';
+import Enzyme from 'enzyme';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
 
 
