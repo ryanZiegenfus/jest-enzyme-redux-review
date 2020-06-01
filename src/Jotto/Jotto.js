@@ -8,9 +8,9 @@ class Jotto extends Component {
 
   render() {
     return (
-      <div data-test="component-jotto" className='App'>
+      <div data-test="component-jotto" className='container'>
         <h1>Jotto</h1>
-        <Congrats success={false}/>
+        <Congrats success={true}/>
         <GuessedWords guessedWords={[
           { guessedWord: 'train', letterMatchCount: 3 }
         ]}/>
