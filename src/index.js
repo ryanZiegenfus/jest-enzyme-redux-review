@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+
 import './index.css';
 import App from './App';
 import Jotto from './Jotto/Jotto'
 import * as serviceWorker from './serviceWorker';
+import store from './configureStore'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Jotto />
+    <Provider store={store}>
+      <Jotto />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
